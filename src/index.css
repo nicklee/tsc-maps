@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8f6f0;
+    color: #2b3330;
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom subtle paper grain texture for map aesthetic */
+.paper-texture {
+  background-image: radial-gradient(#000000 0.4px, transparent 0.4px);
+  background-size: 8px 8px;
+  opacity: 0.035;
+}
+
+/* Subtle water ripples */
+@keyframes waveDrift {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-2px) translateX(2px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+.wave-animation {
+  animation: waveDrift 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar for preview card and list view */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4ccbe;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5aba0;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "The Slow Cyclist - Explore Our Journeys",
+  "description": "An interactive, illustrated journey discovery map and catalogue for The Slow Cyclist.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
